@@ -1,10 +1,10 @@
 import Image from "next/image"
-import { GoHomeFill } from "react-icons/go";
+import { GoHome, GoHomeFill } from "react-icons/go";
 import { FiSearch } from "react-icons/fi";
-import { IoNotificationsOutline } from "react-icons/io5";
-import { MdOutlineMailOutline } from "react-icons/md";
-import { RiFileListLine } from "react-icons/ri";
-import { FaRegUser } from "react-icons/fa6";
+import { IoNotifications, IoNotificationsOutline } from "react-icons/io5";
+import { MdMail, MdMailOutline } from "react-icons/md";
+import { RiFileListLine, RiFileListFill } from "react-icons/ri";
+import { FaUser, FaRegUser } from "react-icons/fa6";
 import { CgMoreO } from "react-icons/cg";
 
 import { SidebarMenuItem } from "./SidebarMenuItem"
@@ -12,37 +12,44 @@ import { SidebarMenuItem } from "./SidebarMenuItem"
 const menuItems = [
   {
     path: '/',
-    icon: <GoHomeFill size={30}/>,
+    activeIcon: <GoHomeFill size={30}/>,
+    inactiveIcon: <GoHome size={30}/>,
     title: 'Home',
   },
   {
     path: '/explore',
-    icon: <FiSearch size={30}/>,
+    activeIcon: <FiSearch size={30}/>,
+    inactiveIcon: <FiSearch size={30}/>,
     title: 'Explore',
   },
   {
     path: '/notifications',
-    icon: <IoNotificationsOutline size={30}/>,
+    activeIcon: <IoNotifications size={30}/>,
+    inactiveIcon: <IoNotificationsOutline size={30}/>,
     title: 'Notifications',
   },
   {
     path: '/messages',
-    icon: <MdOutlineMailOutline size={30}/>,
+    activeIcon: <MdMail size={30}/>,
+    inactiveIcon: <MdMailOutline size={30}/>,
     title: 'Messages',
   },
   {
     path: '/lists',
-    icon: <RiFileListLine size={30}/>,
+    activeIcon: <RiFileListFill size={30}/>,
+    inactiveIcon: <RiFileListLine size={30}/>,
     title: 'Lists',
   },
   {
     path: '/profile',
-    icon: <FaRegUser size={30}/>,
+    activeIcon: <FaUser size={30}/>,
+    inactiveIcon: <FaRegUser size={30}/>,
     title: 'Profile',
   },
   {
     path: '/more',
-    icon: <CgMoreO size={30}/>,
+    activeIcon: <CgMoreO size={30}/>,
+    inactiveIcon: <CgMoreO size={30}/>,
     title: 'More',
   },
 ]
@@ -51,12 +58,16 @@ export const Sidebar = () => {
   return (
     <div className="p-2 bg-gray-700">
       <div className="p-2">
-        <Image
-          src="/logo.png"
-          alt="logo"
-          width={30}
-          height={30}
-        />
+        <div className="pl-3">
+          <Image
+            src="/logo.png"
+            alt="logo"
+            width={30}
+            height={30}
+            className="mb-4"
+          />
+        </div>
+        
         {
           menuItems.map(item => <SidebarMenuItem key={item.title} {...item}/>)
         }
