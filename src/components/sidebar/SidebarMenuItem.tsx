@@ -17,9 +17,9 @@ export const SidebarMenuItem = ({path, activeIcon, inactiveIcon, title}: Props) 
   const currentPath = usePathName === path
 
   return (
-    <Link href={path} className={`flex items-center transition duration-300 ease-in-out transform group ${currentPath && 'font-bold'}`}>
+    <Link href={path} className={`flex items-center ${currentPath && 'font-bold'}`}>
       
-      <div className="flex group-hover:bg-gray-500 rounded-full p-3 pr-6">
+      <div className="flex hover:bg-slate-900 rounded-full p-3 pr-6">
         { currentPath ? (
           <div className='mr-4'>
             {activeIcon}

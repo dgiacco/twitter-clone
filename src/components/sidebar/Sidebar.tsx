@@ -11,7 +11,7 @@ import { SidebarMenuItem } from "./SidebarMenuItem"
 
 const menuItems = [
   {
-    path: '/',
+    path: '/foryou',
     activeIcon: <GoHomeFill size={30}/>,
     inactiveIcon: <GoHome size={30}/>,
     title: 'Home',
@@ -56,7 +56,7 @@ const menuItems = [
 
 export const Sidebar = () => {
   return (
-    <div className="p-2 bg-gray-700">
+    <div className="p-2">
       <div className="p-2">
         <div className="pl-3">
           <Image
