@@ -23,6 +23,9 @@ export default function RootLayout({
             <div className="flex-1">
               { children }
             </div>
+            <div className="w-1/5 bg-gray-700">
+              Trends
+            </div>
           </div>
         </div>
       </body>
