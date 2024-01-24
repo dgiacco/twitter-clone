@@ -4,7 +4,7 @@ import { HomeHeaderSections } from "./HomeHeaderSections";
 const homeHeaderData = [
   {
     title: "For you",
-    path: "/foryou"
+    path: "/for-you"
   },
   {
     title: "Following",

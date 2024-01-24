@@ -11,7 +11,7 @@ import { SidebarMenuItem } from "./SidebarMenuItem"
 
 const menuItems = [
   {
-    path: '/foryou',
+    path: '/for-you',
     activeIcon: <GoHomeFill size={30}/>,
     inactiveIcon: <GoHome size={30}/>,
     title: 'Home',

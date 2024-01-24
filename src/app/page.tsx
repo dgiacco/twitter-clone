@@ -4,11 +4,10 @@ import { HomeHeader } from '../home/components/HomeHeader';
 
 export default function HomePage() {
 
-  redirect('/foryou')
+  redirect('/for-you')
 
   return (
-    <div className="flex">
-      <HomeHeader />
-    </div>
+    <>
+    </>
   );
 }
