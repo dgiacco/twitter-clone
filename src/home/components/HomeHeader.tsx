@@ -14,7 +14,7 @@ const homeHeaderData = [
 
 export const HomeHeader = () => {
   return (
-    <div className="w-full flex">
+    <div className="w-full flex border-l border-r border-slate-600">
       <div className="w-5/6 flex">
         {
           homeHeaderData.map(item => (<HomeHeaderSections key={item.path} {...item} />))

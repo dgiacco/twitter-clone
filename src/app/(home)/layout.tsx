@@ -14,7 +14,7 @@ export default function HomeLayout({
   return (
     <div>
       <HomeHeader />
-      <div className="min-h-screen flex justify-center">
+      <div className="min-h-screen flex justify-center border border-slate-600">
         {children}
       </div>
     </div>

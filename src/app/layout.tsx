@@ -23,7 +23,7 @@ export default function RootLayout({
             <div className="flex-1">
               { children }
             </div>
-            <div className="w-1/5 bg-gray-700">
+            <div className="w-1/5">
               Trends
             </div>
           </div>
