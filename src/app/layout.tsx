@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen flex justify-center">
-        <div className="w-5/6">
+        <div className="w-4/5">
           <div className="flex">
             <div className="w-1/5">
               <Sidebar />

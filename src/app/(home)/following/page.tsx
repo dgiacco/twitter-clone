@@ -1,8 +1,9 @@
+import { PostSection } from "@/home"
 
 const FollowingPage = () => {
   return (
-    <div>
-      Following
+    <div className="w-full">
+      <PostSection />
     </div>
   )
 }

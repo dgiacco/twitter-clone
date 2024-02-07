@@ -15,7 +15,7 @@ export const HomeHeaderSections = ({title, path}: Props) => {
 
   return (
     <div className="w-1/2 flex justify-center hover:bg-slate-900 hover:cursor-pointer">
-      <div className={`flex items-center justify-center ${currentPath ? 'border-b-4 border-blue-500 font-bold text-white' : 'text-slate-400'}`}>
+      <div className={`flex items-center justify-center ${currentPath ? 'border-b-4 border-blue-500 font-bold text-white' : 'text-slate-500'}`}>
       <Link href={path}>
         {title}
       </Link>

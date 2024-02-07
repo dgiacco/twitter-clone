@@ -1,8 +1,9 @@
+import { PostSection } from "@/home"
 
 const ForyouPage = () => {
   return (
-    <div>
-      For you
+    <div className="w-full">
+      <PostSection />
     </div>
   )
 }
